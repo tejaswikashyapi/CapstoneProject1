@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Lets Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   </head>
+   <body>
+
+    <!-- Move to up bottom -->
+    <div class="scroll-button">
+      <a href="index.html"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    
+    <!-- navigation menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="index.html">Tejaswi Kashyapi</a></div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <br><br><br>
+        <center>
+            <form name="msg" action="" onsubmit="return validate_msg();" method="post">
+            <table align="center" width=40% width="100%" cellspacing="2" cellpadding="2" border="5">
+            <tr>
+                <td colspan="2" align="center"><b>LETS CHAT</b></td>
+ 
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">E-mail ID<span style="color:red">*</span></td>
+ 
+                <td width="57%"><input type="text" value="" name="email" id="email" size="24"></td>
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Service<span style="color:red">*</span></td>
+                <td width="57%">
+                    <select name="mydropdown" id="mydropdown">
+                <option value="default" >Choose an option</option>
+                <option value="ML PROJECT">ML PROJECT</option>
+                <option value="Big Data Project">Big Data Project</option>
+                <option value="Educational Service">Educational Service</option>
+                <option value="Team Management">Team Management</option>
+                <option value="Research">Research</option>
+                <option value="Application Development">Application Development</option>
+
+
+                </select></td>
+ 
+ 
+            </tr>
+            <tr>
+                <td align="left" valign="top" width="41%">Message/Comment<span style="color:red">*</span></td>
+                <td width="57%">
+                    <textarea  rows = "5" cols = "50" name = "message" id="message" placeholder="Type in your message/ project idea description"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p align="center">
+                        <input type="submit" value="     Submit    " name="B4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </tr>
+ 
+        </table>
+    </form>
+        </center>
+
+        <script src="scripts.js"></script>
+</body>
+
+</html>
